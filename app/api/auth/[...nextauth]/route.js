@@ -31,7 +31,6 @@ const configCredentialsProvider = {
         // const { name, email, password } = credentials;
         const user = Users.find(usuario =>
             usuario.email === credentials?.email && usuario.password === credentials?.password)
-        console.log(user)
 
         if (user) {
             // Any object returned will be saved in `user` property of the JWT
